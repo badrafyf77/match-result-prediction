@@ -22,7 +22,7 @@
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
@@ -81,7 +81,8 @@
 .selected-team {
   background: rgba(26, 62, 114, 0.1);
   border-radius: 10px;
-  min-width: 150px;
+  max-width: 190px;
+  min-width: 190px;
 }
 @media (max-width: 768px) {
 .selected-teams {
@@ -89,7 +90,8 @@
 }
 
 .selected-team {
-  max-width:150px;
+  max-width:150px !important;
+  min-width: 150px !important;
 }
   
 }
