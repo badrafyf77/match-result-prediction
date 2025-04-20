@@ -1,0 +1,146 @@
+.prediction-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: #1a3e72;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .teams-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem 0;
+  }
+  
+  .team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a3e72;
+  }
+  
+  .prediction-result {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .score-prediction {
+    margin-bottom: 2rem;
+  }
+  
+  .score {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a3e72;
+    margin-top: 0.5rem;
+  }
+  
+  .winner-prediction {
+    margin-bottom: 2rem;
+  }
+  
+  .winner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .winner-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .probability-meter {
+    margin-bottom: 2rem;
+  }
+  
+  .meter {
+    display: flex;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  .meter-fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    transition: width 1s ease-out;
+  }
+  
+  .meter-fill.home {
+    background-color: #1a3e72;
+  }
+  
+  .meter-fill.draw {
+    background-color: #666;
+  }
+  
+  .meter-fill.away {
+    background-color: #d32f2f;
+  }
+  
+  .goal-predictions {
+    margin-top: 2rem;
+  }
+  
+  .goal-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .goal-stat {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .loading {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+  }

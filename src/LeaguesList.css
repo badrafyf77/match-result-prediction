@@ -1,0 +1,37 @@
+.leagues-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .leagues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .league-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .league-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .league-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .league-card h3 {
+    color: #1a3e72;
+    margin-top: 0.5rem;
+  }

@@ -1,0 +1,92 @@
+/* Common styles used across components */
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #1a3e72;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+    color: #444;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  }
+  
+  .button {
+    background: linear-gradient(135deg, #1a3e72 0%, #2a5298 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+  .app-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      152deg,
+      rgba(96, 157, 255, 0.12) 0%,
+      rgba(73, 124, 207, 0.24) 100%
+    );
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button:active {
+    transform: translateY(0);
+  }
+  
+  .button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
