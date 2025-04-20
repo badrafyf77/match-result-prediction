@@ -85,7 +85,7 @@
   }
 @media (max-width: 768px) {
   .selected-teams {
-    gap: 1rem;
+    gap: 1rem !important;
   }
   
   .selected-team {
