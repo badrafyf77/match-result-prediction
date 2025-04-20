@@ -74,7 +74,7 @@
   .selected-teams {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 2rem;
   }
   
@@ -82,8 +82,17 @@
     background: rgba(26, 62, 114, 0.1);
     border-radius: 10px;
     min-width: 150px;
+  }
+@media (max-width: 768px) {
+  .selected-teams {
+    gap: 1rem;
+  }
+  
+  .selected-team {
     max-width:150px;
   }
+    
+}
   
   .predict-button {
     background: linear-gradient(135deg, #1a3e72 0%, #2a5298 100%);
