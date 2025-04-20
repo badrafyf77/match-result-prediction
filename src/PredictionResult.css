@@ -26,13 +26,28 @@
     gap: 3rem;
     margin: 2rem 0;
   }
-  
-  .team-card {
+
+.team-card {
     background: white;
     border-radius: 15px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+@media (max-width: 768px) {
+  .team-card {
+    max-height: 180px;
+  }
+.teams-display {
+    gap: 1rem;
+  }
+.goal-stats {
+    display: block;
+  }  
+.goal-stat span:nth-of-type(2) {
+    margin-top: auto;
+}    
+    
+}
   
   .team-logo {
     width: 100px;
