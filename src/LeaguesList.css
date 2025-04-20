@@ -9,6 +9,11 @@
     gap: 2rem;
     margin-top: 2rem;
   }
+  @media (max-width: 768px) {
+    .leagues-container {
+      padding: 0px !important;
+  }
+  }
   
   .league-card {
     background: white;
